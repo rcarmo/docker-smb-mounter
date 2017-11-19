@@ -2,6 +2,7 @@ export IMAGE_NAME=rcarmo/smb-mounter
 export RW_SHARES?=//server/share1 //server/share2
 export RO_SHARES?=//server/share3
 export VCS_REF=`git rev-parse --short HEAD`
+export VCS_URL=https://github.com/rcarmo/docker-smb-mounter
 export BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
 export DATA_FOLDER?=${CURDIR}/data
 export TEMP_FOLDER?=${CURDIR}/tmp

@@ -16,7 +16,8 @@ CMD ["/start.sh"]
 
 # Labels
 ARG VCS_REF
+ARG VCS_URL
 ARG BUILD_DATE
 LABEL org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.vcs-url="https://github.com/rcarmo/docker-smb-mounter"
+      org.label-schema.vcs-url=$VCS_URL \
+      org.label-schema.build-date=$BUILD_DATE
